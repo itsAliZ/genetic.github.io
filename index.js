@@ -169,15 +169,15 @@ function showGen(gen, individual, fitness, i, n, populationSize) {
   const p = document.createElement("p");
   const p2 = document.createElement("p");
   const root = document.getElementById("root");
-  p.innerHTML = `generation: ${gen}.${i} individual: ${individual} fitness: ${fitness} `;
+  p.innerHTML = `generation: ${gen} individual number: ${i} board: ${individual} fitness: ${fitness} `;
   fitnessArr.push(fitness);
-  // If we reached the last individual or found a solution, calculat  e average fitness
+  // If we reached the last individual or found a solution, calculate average fitness
   if (i == populationSize - 1 || fitness == (n * (n - 1)) / 2) {
     let avg = 0;
     fitnessArr.forEach((num) => (avg += num));
     // Calculate average fitness
     if (fitness == (n * (n - 1)) / 2) {
-      avg = parseFloat((avg / i).toFixed(2));
+      avg = parseFloat((avg / (i + 1)).toFixed(2));
     } else avg = parseFloat((avg / populationSize).toFixed(2));
     // Sort fitness array to find the best fitness
     fitnessArr.sort((a, b) => b - a);
