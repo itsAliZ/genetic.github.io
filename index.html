@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GA</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Genetic Algorithm</h1>
+    <input type="number" id="n" placeholder="Enter Number of Queens" />
+    <input type="number" id="populationSize" placeholder="Population Size" />
+    <input type="number" id="maxGenerations" placeholder="Max Generations" />
+    <input
+      type="number"
+      id="mutationRate"
+      placeholder="Mutation Rate (example: 0.01)"
+      style="width: 13rem"
+    />
+    <button id="startButton">Start</button>
+    <div id="result"></div>
+    <div id="root"></div>
+    <canvas id="myChart"></canvas>
+    <p id="h1">در هر نسل میباشد best fitness رنگ سبز نشان دهنده</p>
+    <p id="h2">در هر نسل میباشد average fitness رنگ قرمز نشان دهنده</p>
+  </body>
+  <script src="./index.js"></script>
+</html>
