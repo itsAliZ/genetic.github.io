@@ -290,7 +290,3 @@ button.addEventListener("click", getValues);
 
 // Solve 8-queens problem
 //solveNQueens(8);
-
-
-// Solve 8-queens problem
-//solveNQueens(8);
