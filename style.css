@@ -20,5 +20,9 @@ color: red;
 }
 p{
     margin-top: 20px;
-
+}
+#result{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
