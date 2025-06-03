@@ -183,6 +183,7 @@ function showGen(gen, individual, fitness, i, n, populationSize) {
     fitnessArr.sort((a, b) => b - a);
 
     p2.innerHTML = `average fitness in this generation is: ${avg} and the best fitness is: ${fitnessArr[0]}`;
+    p2.style = "color: rgb(26, 91, 255);";
     avgFitnessArr.push(avg);
     bestFitnessArr.push(fitnessArr[0]);
 
@@ -205,7 +206,7 @@ function solveNQueens(
   const result = document.getElementById("result");
   result.innerHTML = "";
   if (solution) {
-    result.innerHTML = `Solution found in generation ${generation}.${populationNum}: ${solution}`;
+    result.innerHTML = `Solution found in generation ${generation} individual:${populationNum}: ${solution}`;
 
     // Print the board
     console.log("\nBoard:");
@@ -286,6 +287,10 @@ button.addEventListener("click", getValues);
 
 button = document.getElementById("startButton");
 button.addEventListener("click", getValues);
+
+// Solve 8-queens problem
+//solveNQueens(8);
+
 
 // Solve 8-queens problem
 //solveNQueens(8);
